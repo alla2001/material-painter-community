@@ -4,7 +4,7 @@ to the library: unpacks it under items/<id>/ and adds its entry to index.json.
     python tools/add_item.py submission.zip [--author NAME] [--description TEXT] [--tags a,b]
 
 The zip holds one folder <id>/ with info.json, the .mpgraph, thumb.png and
-nodes/*.wgsl. Review the graph and any .wgsl nodes before committing.
+nodes/*.wgsl. Review the graph or smart material and any .wgsl nodes before committing.
 """
 import argparse
 import json
@@ -14,7 +14,7 @@ import sys
 import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-ALLOWED = {".mpgraph", ".wgsl", ".png", ".json"}
+ALLOWED = {".mpgraph", ".mpsmart", ".wgsl", ".png", ".json"}
 
 
 def main():

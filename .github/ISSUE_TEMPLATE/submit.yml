@@ -1,11 +1,11 @@
 name: Submit a creation
-description: Share a material graph or custom node with every Material Painter user.
+description: Share a smart material, material graph or custom node with every Material Painter user.
 labels: [submission]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing! In Material Painter, right-click your graph on the shelf → **Share to community…** makes the `.zip` to attach below.
+        Thanks for sharing! In Material Painter, right-click your smart material or graph on the shelf → **Share to community…** makes the `.zip` to attach below.
   - type: input
     id: name
     attributes:

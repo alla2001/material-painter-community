@@ -1,14 +1,16 @@
 # Material Painter community library
 
-Material graphs and custom nodes made by [Material Painter](https://github.com/alla2001/material-painter)
+Smart materials, material graphs and custom nodes made by [Material Painter](https://github.com/alla2001/material-painter)
 users. Everything here shows up inside the app under **Get more assets → Community**,
 one click to download.
 
 ## Share your creation
 
-1. In Material Painter, save your graph to the shelf (Material Designer → **Save to shelf**).
-2. Right-click it on the shelf (Graphs) → **Share to community…**
-3. The app packs it (the graph, its thumbnail and any custom nodes it uses) into a
+1. In Material Painter, save it to the shelf:
+   - a **smart material**: right-click a folder in Layers → **Save as smart material**;
+   - a **graph**: Material Designer → **Save to shelf**.
+2. Right-click it on the shelf → **Share to community…**
+3. The app packs it (the file, its thumbnail and any custom nodes it uses) into a
    `.zip` and opens the submission form here. Attach the zip, add a short description
    and submit.
 
@@ -51,6 +53,8 @@ files and an entry in `index.json` (see the format below), or run
 }
 ```
 
-- `kind`: `graph` (a `.mpgraph` material graph) or `node` (a single `.wgsl` node).
-- `files` and `thumb` are relative to `path`. Graph files and nodes are plain text,
-  so they're easy to review in a pull request.
+- `kind`: `smart` (a `.mpsmart` smart material), `graph` (a `.mpgraph` material
+  graph) or `node` (a single `.wgsl` node).
+- `files` and `thumb` are relative to `path`. Graphs and nodes are plain text; a
+  `.mpsmart` is a zip holding a readable `smart.json`, its images and a thumbnail,
+  so everything can be reviewed and used without the app.
