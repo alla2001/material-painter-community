@@ -1,0 +1,48 @@
+name: Submit a creation
+description: Share a material graph or custom node with every Material Painter user.
+labels: [submission]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! In Material Painter, right-click your graph on the shelf → **Share to community…** makes the `.zip` to attach below.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Lava Crust
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author name to show
+      placeholder: your name or handle
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences. What is it, and how do you use it?
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      placeholder: lava, rock, emissive
+  - type: textarea
+    id: files
+    attributes:
+      label: The .zip from Material Painter
+      description: Drag the zip here. A screenshot of it on a mesh is welcome too.
+    validations:
+      required: true
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License
+      options:
+        - label: This is my own work, and I release it as CC0 (public domain) so anyone can use it for anything.
+          required: true
